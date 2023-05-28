@@ -36,11 +36,11 @@ sudo mv apache-tomcat-11.0.0.-M6.zip tomcat11
 sudo chmod 777 -R /opt/tomcat11
 sudo chown ec2-user -R /opt/tomcat11
 ### start tomcat
-sh /opt/tomcat9/bin/startup.sh
+sh /opt/tomcat11/bin/startup.sh
 # create a soft link to start and stop tomcat
 # This will enable us to manage tomcat as a service
-sudo ln -s /opt/tomcat9/bin/startup.sh /usr/bin/starttomcat
-sudo ln -s /opt/tomcat9/bin/shutdown.sh /usr/bin/stoptomcat
+sudo ln -s /opt/tomcat11/bin/startup.sh /usr/bin/starttomcat
+sudo ln -s /opt/tomcat11/bin/shutdown.sh /usr/bin/stoptomcat
 starttomcat
 sudo su - ec2-user
 ```
